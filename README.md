@@ -1,1 +1,1 @@
-https://utyfjs.github.io/rsschool-cv/cv
+https://utyfjs.github.io/rsschool-cv/
