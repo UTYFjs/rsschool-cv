@@ -5,92 +5,125 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style/style.css" type="text/css">
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    <header>
-        <h1>Henadzi Suhakou</h1>
-        <h2>Junior Frontend developer</h2>
-    </header>
+    <header class = "header">
+        <img class ="Foto" src="./image/my foto1.jpg" alt="my-foto">
+        <section><h1>Henadzi Suhakou</h1>
+            <h2>Junior Front-end Developer (Student)</h2>
+        </section>
+   </header>
     <main>
-        <div>
-            <div class="about">
-                <h3 class="h3">
-                    <b>About me</b>
-                    
-                </h3>
-                <p class="mainText">I graduated from Belarusian State University in 2012. My specialty is geologist engineer. From 2012 to 2019, I worked as a geologist. My job was to study the reliability of soils for the construction of buildings.
-                    I have been a freelancer since 2019. I have a small YouTube channel.
-                    Now I have moved from the Republic of Belarus. And I want to develop in the field of front-end development.
-                    I'm start from zero level in frontend develop.
-                    <br>
-                    But I hope I can learn everything necessary. My goal is to get a job as a junior developer within 6 months.
-                    <br>
-                    I want to learn Front-End Development in RSSchool!</p>
-            </div>
-            <div class="education">
+        <section class="contacts">
+            <h3 class="h3">Contacts:</h3>
+            <ul class="location">
+                <li><b>Location:</b></li>
+                <li>Belarus, Svelogorsk</li>
+                <li>Georgia, Batumi <br>(Current location)</li>
+            </ul>
+            <ul class="tel">
+                <li><b>Phone number:</b></li>
+                <li>+375292437459</li>
+                <li>+995595909226</li>
+            </ul>
+            <ul class="email">
+                <li><b>Email:</b></li>
+                <li>belarus1990@gmail.com</li>
+            </ul>
+            <ul class="discord">
+                <li><b>Discord:</b></li>
+                <li>UTYFjs #7716</li>
+            </ul>
+        </section>
+           <section class="about">
+               <section>
+                   <h3 class="h3">
+                       <b>About me</b>                    
+                   </h3>
+                   <h4 class="h4">A few words</h4>
+               </section>
+               <p class="mainText">I graduated from Belarusian State University in 2012. My specialty is geologist engineer. From 2012 to 2019, I worked as a geologist. My job was to study the reliability of soils for the construction of buildings.
+                   I have been a freelancer since 2019. I have a small YouTube channel.
+                   Now I have moved from the Republic of Belarus. And I want to develop in the field of front-end development.
+                   I'm start from scratch in front-end develop.
+                   <br>
+                   But I hope I can learn everything necessary. My goal is to get a job as a junior developer within 6 months.
+                   <br>
+                  In current time I learn Front-End Development in RSSchool!</p>
+            </section>
+            <section class="education">
                 <h3 class="h3">
                     <b>Education</b>
-                    <p class="mainText">Belorussian State University - engineer geologist</p>
                 </h3>
-            </div>
-            <div class="code">
+                <p class="mainText">Belorussian State University</p>
+                <p>RSSchool "JavaScript/Front-end (in process)</p>
+            </section>
+            <section class="code">
                 <h3 class="h3">
                     <b>Code Example</b>
                 </h3>
                 <p class="code">
                     <code>
                         <pre>
-                            .border-div {
-                                padding: 0 10;
-                                margin: 0;
-                                font-family: sans-serif;
-                                font-size: 12px;
+                            function makeLooper(str) {
+                                let count = 0;
+                                function abc(){
+                                  let sum = str.length;
+                                  let res = str[count];
+                                  count +=1;
+                                  if (count >= str.length){count = 0}
+                                  return res
+                                  }
+                                return abc;
                               }
                         </pre>
                     </code>
                 </p>
-            </div>
-            <div class="experience">
+            </section>
+            <section class="experience">
                 <h3 class="h3">
                     Work Experience
                 </h3>
                 <p class="maintext">
-                    Nothing yet...
+                    Nothing yet in Front-end...
                 </p>
-            </div>
-        </div>
-   
-    </main>
-    <footer>
-        <div class="skills">
-            <h4 class="h4f">My Skills</h4>
+            </section>
+        
+        <section class="skills">
+            <h3 class="h3">My Skills</h3>
             <ul>
-                <li>HTML 5</li>
-                <li>CSS</li>
-                <li>Git GitHub</li>
-                <li>Adobe Premier</li>
-                <li>Adobe Photoshop</li>
-                <li>AutoCAD</li>
+                <li>HTML 5 <span class="scale"></span></li>
+                <li>CSS <span class="scale"></span></li>
+                <li>JacaScript <span class="scale"></span></li>
+                <li>NodeJS <span class="scale"></span></li>
+                <li>Git, GitHub <span class="scale"></span></li>
+                <li>SaSS <span class="scale"></span></li>
+                <li>Webpack <span class="scale"></span></li>
+                <li>Adobe Premier <span class="scale"></span></li>
+                <li>Adobe Photoshop <span class="scale"></span></li>
+                <li>AutoCAD <span class="scale"></span></li>
             </ul>
-        </div>
-        <div class="language">
-            <h4 class="h4f">Languages:</h4>
+        </section>
+        <section class="language">
+            <h3 class="h3">Languages:</h3>
             <ul>
                 <li>Russian - native</li>
                 <li>English - A2</li>
                 <li>Belorussian - Basic+</li>
             </ul>
-        </div>
-        <div class="contacts">
-            <h4 class="h4f">Contacts:</h4>
-            <ul>
-                <li>+375292437459</li>
-                <li>+995595909226</li>
-                <li>Discord: UTYFjs #7716</li>
-                <li>belarus1990@gmail.com</li>
+        </section>
+    </main>
+    <footer>
+        <section>
+            <ul class="footer-links">
+                <li class="footer-item"><a href=""></a></li>
+                <li class="footer-item"><a href=""></a></li>
+                <li class="footer-item"><a href=""></a></li>
             </ul>
-        </div>
+        </section>
+        <section><h4>Suhakou Henadzi 2022</h4></section>
+
 
     </footer>
     
