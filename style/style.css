@@ -8,8 +8,8 @@ body {
   margin: 0 auto;
   padding: 0 15vw;
   width: 100%;
-  background-color: azure;
-  color: #6d6d6d;
+  background-color: #202026;
+  color: #a4a5a6;
 }
 
 .header {
@@ -21,11 +21,15 @@ body {
       -ms-flex-direction: row;
           flex-direction: row;
   gap: 2rem;
+  background-color: #292929;
 }
 
 .header .foto {
+  display: block;
   max-height: 320px;
   padding: 50px 0;
+  border-radius: 20px;
+  border-radius: 10px;
 }
 
 .header .header-title {
@@ -42,10 +46,11 @@ body {
   -ms-grid-column-align: center;
       justify-self: center;
   margin: 30px 0 0 0;
+  color: #eeb71e;
 }
 
 .header .header-title .h2 {
-  font-size: 1.5em;
+  font-size: 1.2rem;
   margin: 0;
 }
 
@@ -96,6 +101,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  background-color: #202026;
 }
 
 .main .about .title {
@@ -105,6 +111,7 @@ body {
 .main .about .title .h3 {
   margin: 0;
   white-space: nowrap;
+  color: #eeb71e;
 }
 
 .main .about .title .h4 {
@@ -125,6 +132,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  background-color: #292929;
 }
 
 .main .education .h3 {
@@ -133,6 +141,7 @@ body {
 
 .main .education .main-text {
   width: 70vw;
+  color: #eeb71e;
 }
 
 .main .code {
@@ -147,6 +156,7 @@ body {
 
 .main .code .h3 {
   width: 20vw;
+  color: #eeb71e;
 }
 
 .main .code .code-text {
@@ -161,14 +171,89 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  background-color: #202026;
 }
 
 .main .experience .h3 {
+  display: block;
   width: 20vw;
+  white-space: nowrap;
+  color: #eeb71e;
 }
 
 .main .experience .main-text {
+  padding: 10px 0 0 0;
   width: 70vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main .experience .main-text .list-project {
+  list-style-type: none;
+  padding: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.main .experience .main-text .list-project .project {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+  width: 30%;
+}
+
+.main .experience .main-text .list-project .project .project-link-shelter {
+  position: relative;
+  display: block;
+  width: 20vw;
+}
+
+.main .experience .main-text .list-project .project .project-link-shelter img {
+  position: relative;
+  border-radius: 20px;
+  width: 20vw;
+}
+
+.main .experience .main-text .list-project .project .project-link:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-box-shadow: #6d6d6d;
+          box-shadow: #6d6d6d;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.main .experience .main-text .list-project .project .project-title {
+  text-align: center;
+}
+
+.main .experience .main-text .list-project .project .project-link-keyboard {
+  -ms-flex-item-align: left;
+      -ms-grid-row-align: left;
+      align-self: left;
+  -ms-grid-column-align: left;
+      justify-self: left;
+  position: relative;
+  display: block;
+  width: 20vw;
+}
+
+.main .experience .main-text .list-project .project .project-link-keyboard img {
+  position: relative;
+  border-radius: 20px;
+  width: 20vw;
+}
+
+.main .experience .main-text .list-project .project .project-title {
+  margin: 0 0 1rem 0;
 }
 
 .main .skills {
@@ -179,6 +264,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  background-color: #292929;
 }
 
 .main .skills .h3 {
@@ -273,6 +359,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  background-color: #202026;
 }
 
 .main .language .h3 {
@@ -283,6 +370,27 @@ body {
   width: 70vw;
   list-style-type: none;
   padding: 0;
+  color: #eeb71e;
+}
+
+.introduction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.introduction .h3 {
+  width: 15vw;
+  color: #eeb71e;
+}
+
+.introduction .video {
+  margin: 0 auto;
+  border-radius: 20px;
 }
 
 .footer {
@@ -299,6 +407,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-color: #292929;
 }
 
 .footer .footer-link {

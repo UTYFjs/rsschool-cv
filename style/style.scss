@@ -6,17 +6,22 @@ body{
   margin: 0 auto;
   padding: 0 15vw;
   width: 100%;
-  background-color: azure;
-  color: #6d6d6d;
+  background-color: #202026;
+  color: #a4a5a6;
 }
 .header{
   display: flex;
   flex-direction: row;
   gap: 2rem;
+  background-color: #292929;
     .foto{
+      display: block;
       max-height: 320px;
       padding: 50px 0;
+      border-radius: 20px;
+      border-radius: 10px;
     }
+
     .header-title{
       text-align: left;
       width: 80%;
@@ -26,9 +31,10 @@ body{
         align-self: center;
         justify-self: center;
         margin: 30px 0 0 0;
+        color: #eeb71e;
       }
       .h2{
-        font-size: 1.5em;
+        font-size: 1.2rem;
         margin: 0;
       }
       .contacts{
@@ -64,11 +70,13 @@ body{
   .about{
     display: flex;
     flex-direction: row;
+    background-color: #202026;
     .title{
       width: 20vw;
       .h3{
         margin: 0;
         white-space: nowrap;
+        color: #eeb71e;
       }
       .h4{
         margin: 0;
@@ -84,11 +92,13 @@ body{
   .education{
     display: flex;
     flex-direction: row;
+    background-color: #292929;
     .h3{
       width: 20vw;
     }
     .main-text{
       width: 70vw;
+      color: #eeb71e;
     }
   }
   .code{
@@ -96,6 +106,7 @@ body{
     flex-direction: row;
     .h3{
       width: 20vw;
+      color: #eeb71e;
     }
     .code-text{
       width: 70vw;
@@ -104,16 +115,75 @@ body{
   .experience{
     display: flex;
     flex-direction: row;
+    background-color: #202026;
     .h3{
+      display: block;
       width: 20vw;
+      white-space: nowrap;
+      color: #eeb71e;
     }
     .main-text{
+      padding: 10px 0 0 0;
       width: 70vw;
+      display: flex;
+      flex-direction: column;
+
+      .list-project{
+        list-style-type: none;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+
+        .project{
+          display:grid;
+          grid-template-rows: auto auto;
+          width: 30%;
+          .project-link-shelter{
+            position: relative;
+            display: block;
+            width: 20vw;
+            img{
+              position: relative;
+              border-radius: 20px;
+              width: 20vw;
+            }
+          }
+          .project-link:hover{
+            transform: scale(1.02);
+            box-shadow: #6d6d6d;
+            transition: all 0.3s;
+
+          }
+          .project-title{
+            text-align: center;
+          }
+          .project-link-keyboard{
+            align-self: left;
+            justify-self: left;
+            position: relative;
+            display: block;
+            width: 20vw;
+
+            //background-image: url(../image/keyboard.png);
+            //background-size: cover;
+            img{
+              position: relative;
+              border-radius: 20px;
+              width: 20vw;
+            }
+          }
+          .project-title{
+            margin: 0 0 1rem 0;
+          }
+        }
+      }
     }
   }
   .skills{
     display: flex;
     flex-direction: row;
+    background-color: #292929;
     .h3{
       width: 20vw;
     }
@@ -171,6 +241,7 @@ body{
   .language{
     display: flex;
     flex-direction: row;
+    background-color: #202026;
     .h3{
       width: 20vw;
     }
@@ -178,15 +249,29 @@ body{
       width: 70vw;
       list-style-type: none;
       padding: 0;
+      color: #eeb71e;
     }
   }
 }
+.introduction{
+  display:flex;
+  flex-direction: row;
+  .h3{
+    width: 15vw;
+    color: #eeb71e;
 
+  }
+  .video{
+    margin: 0 auto;
+    border-radius: 20px;
+  }
+}
 .footer{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: #292929;
   
   .footer-link{
     display: flex;
@@ -242,3 +327,5 @@ body{
   }
 
 }
+
+
