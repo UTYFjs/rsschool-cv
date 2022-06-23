@@ -4,46 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CV Suhakou Henadzi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
     <header class = "header">
-        <img class ="Foto" src="./image/my foto1.jpg" alt="my-foto">
-        <section><h1>Henadzi Suhakou</h1>
-            <h2>Junior Front-end Developer (Student)</h2>
+        <img class ="foto" src="./image/my foto1.jpg" alt="my-foto">
+        <section class = "header-title"><h1 class="h1">Henadzi Suhakou</h1>
+            <h2 class="h2">Junior Front-end Developer (Student)</h2>
+            <section class = "contacts">
+                <ul class="location">
+                    <li><b>Location:</b></li>
+                    <li>Belarus, Svelogorsk</li>
+                    <li>Georgia, Batumi <br>(Current location)</li>
+                </ul>
+                <ul class="tel">
+                    <li><b>Phone number:</b></li>
+                    <li>+375292437459</li>
+                    <li>+995595909226</li>
+                </ul>
+                <ul class="email">
+                    <li><b>Email:</b></li>
+                    <li>belarus1990@gmail.com</li>
+                </ul>
+                <ul class="discord">
+                    <li><b>Discord:</b></li>
+                    <li>UTYFjs #7716</li>
+                </ul>
+            </section>
         </section>
+        
    </header>
-    <main>
-        <section class="contacts">
-            <h3 class="h3">Contacts:</h3>
-            <ul class="location">
-                <li><b>Location:</b></li>
-                <li>Belarus, Svelogorsk</li>
-                <li>Georgia, Batumi <br>(Current location)</li>
-            </ul>
-            <ul class="tel">
-                <li><b>Phone number:</b></li>
-                <li>+375292437459</li>
-                <li>+995595909226</li>
-            </ul>
-            <ul class="email">
-                <li><b>Email:</b></li>
-                <li>belarus1990@gmail.com</li>
-            </ul>
-            <ul class="discord">
-                <li><b>Discord:</b></li>
-                <li>UTYFjs #7716</li>
-            </ul>
-        </section>
+    <main class="main">
            <section class="about">
-               <section>
+               <section class = "title">
                    <h3 class="h3">
                        <b>About me</b>                    
                    </h3>
                    <h4 class="h4">A few words</h4>
                </section>
-               <p class="mainText">I graduated from Belarusian State University in 2012. My specialty is geologist engineer. From 2012 to 2019, I worked as a geologist. My job was to study the reliability of soils for the construction of buildings.
+               <p class="main-text">I graduated from Belarusian State University in 2012. My specialty is geologist engineer. From 2012 to 2019, I worked as a geologist. My job was to study the reliability of soils for the construction of buildings.
                    I have been a freelancer since 2019. I have a small YouTube channel.
                    Now I have moved from the Republic of Belarus. And I want to develop in the field of front-end development.
                    I'm start from scratch in front-end develop.
@@ -56,15 +57,17 @@
                 <h3 class="h3">
                     <b>Education</b>
                 </h3>
-                <p class="mainText">Belorussian State University</p>
-                <p>RSSchool "JavaScript/Front-end (in process)</p>
+                <section class = "main-text">
+                    <p>Belorussian State University</p>
+                    <p>RSSchool "JavaScript/Front-end (in process)</p>
+                </section>
             </section>
             <section class="code">
                 <h3 class="h3">
                     <b>Code Example</b>
                 </h3>
-                <p class="code">
-                    <code>
+                <p >
+                    <code class="code-text">
                         <pre>
                             function makeLooper(str) {
                                 let count = 0;
@@ -85,46 +88,43 @@
                 <h3 class="h3">
                     Work Experience
                 </h3>
-                <p class="maintext">
-                    Nothing yet in Front-end...
+                <p class="main-text">
+                    Nothing yet in Front-end, but i have study projects
                 </p>
             </section>
         
         <section class="skills">
             <h3 class="h3">My Skills</h3>
-            <ul>
-                <li>HTML 5 <span class="scale"></span></li>
-                <li>CSS <span class="scale"></span></li>
-                <li>JacaScript <span class="scale"></span></li>
-                <li>NodeJS <span class="scale"></span></li>
-                <li>Git, GitHub <span class="scale"></span></li>
-                <li>SaSS <span class="scale"></span></li>
-                <li>Webpack <span class="scale"></span></li>
-                <li>Adobe Premier <span class="scale"></span></li>
-                <li>Adobe Photoshop <span class="scale"></span></li>
-                <li>AutoCAD <span class="scale"></span></li>
+            <ul class = "main-skills">
+                <li class = "skills-item">HTML 5 <p class="skills-value">80%</p><span class="scale scale-html"></span></li>
+                <li class = "skills-item">CSS <p class="skills-value">70%</p><span class="scale scale-css"></span></li>
+                <li class = "skills-item">JavaScript <p class="skills-value">35%</p><span class="scale scale-js"></span></li>
+                <li class = "skills-item">NodeJS <p class="skills-value">5%</p><span class="scale scale-node"></span></li>
+                <li class = "skills-item">Git, GitHub <p class="skills-value">40%</p><span class="scale scale-git"></span></li>
+                <li class = "skills-item">SaSS <p class="skills-value">70%</p><span class="scale scale-sass"></span></li>
+                <li class = "skills-item">Webpack <p class="skills-value">30%</p><span class="scale scale-webpack"></span></li>
+                <li class = "skills-item">Adobe Premier <p class="skills-value">50%</p><span class="scale scale-premier"></span></li>
+                <li class = "skills-item">Adobe Photoshop <p class="skills-value">40%</p><span class="scale scale-photoshop"></span></li>
+                <li class = "skills-item">AutoCAD <p class="skills-value">50%</p><span class="scale scale-autocad"></span></li>
             </ul>
         </section>
         <section class="language">
             <h3 class="h3">Languages:</h3>
-            <ul>
+            <ul class = "main-text">
                 <li>Russian - native</li>
                 <li>English - A2</li>
                 <li>Belorussian - Basic+</li>
             </ul>
         </section>
     </main>
-    <footer>
-        <section>
-            <ul class="footer-links">
-                <li class="footer-item"><a href=""></a></li>
-                <li class="footer-item"><a href=""></a></li>
-                <li class="footer-item"><a href=""></a></li>
+    <footer class = "footer">
+            <ul class="footer-link">
+                <li class="footer-item"><a class = "footer-item-link footer-item-link--fb" href="https://www.facebook.com/henadzi.suhakou" target = "_blank"></a></li>
+                <li class="footer-item"><a class = "footer-item-link footer-item-link--ig" href="https://www.instagram.com/sugakovgennadii/" target = "_blank"></a></li>
+                <li class="footer-item"><a class = "footer-item-link footer-item-link--rsschool" href="https://rs.school/js/" target = "_blank"></a></li>
+                <li class="footer-item"><a class = "footer-item-link footer-item-link--github" href="https://github.com/UTYFjs" target = "_blank"></a></li>
             </ul>
-        </section>
-        <section><h4>Suhakou Henadzi 2022</h4></section>
-
-
+            <h4 class = "footer-h4">Suhakou Henadzi 2022</h4>
     </footer>
     
 </body>

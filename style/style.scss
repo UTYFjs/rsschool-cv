@@ -1,8 +1,244 @@
 *{
-    font-family: 'Poppins', Arial, sans-serif;
+  font-family: 'Poppins', Arial, sans-serif;
+  box-sizing: border-box;
 }
 body{
-    width:1024px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: azure;
+  margin: 0 auto;
+  padding: 0 15vw;
+  width: 100%;
+  background-color: azure;
+  color: #6d6d6d;
+}
+.header{
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+    .foto{
+      max-height: 320px;
+      padding: 50px 0;
+    }
+    .header-title{
+      text-align: left;
+      width: 80%;
+      padding: 50px 10px;
+      .h1{
+        font-size: 2em;
+        align-self: center;
+        justify-self: center;
+        margin: 30px 0 0 0;
+      }
+      .h2{
+        font-size: 1.5em;
+        margin: 0;
+      }
+      .contacts{
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+
+
+        ul, li { 
+          list-style-type: none;
+          padding: 0 10px 0 0;
+        }
+      }
+      .contacts::before {
+        content: " ";
+        height: 2px;
+        width: 40vw;
+        position: absolute;
+        background-color: #6d6d6d;
+      }
+    }
+    
+}
+.h3{
+  width: 25%;
+  font-size: 1.2em;
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+
+  .about{
+    display: flex;
+    flex-direction: row;
+    .title{
+      width: 20vw;
+      .h3{
+        margin: 0;
+        white-space: nowrap;
+      }
+      .h4{
+        margin: 0;
+        font-weight: 300;
+        font-size: 1rem;
+      }
+    }
+    .main-text{
+      width: 70vw;
+    }
+
+  }
+  .education{
+    display: flex;
+    flex-direction: row;
+    .h3{
+      width: 20vw;
+    }
+    .main-text{
+      width: 70vw;
+    }
+  }
+  .code{
+    display: flex;
+    flex-direction: row;
+    .h3{
+      width: 20vw;
+    }
+    .code-text{
+      width: 70vw;
+    }
+  }
+  .experience{
+    display: flex;
+    flex-direction: row;
+    .h3{
+      width: 20vw;
+    }
+    .main-text{
+      width: 70vw;
+    }
+  }
+  .skills{
+    display: flex;
+    flex-direction: row;
+    .h3{
+      width: 20vw;
+    }
+    .main-skills{
+      list-style-type: none;
+      width: 70vw;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      padding: 0;
+
+      .skills-item{
+        display: flex;
+        flex-direction: column;
+        .skills-value{
+          margin: 0;
+        }
+        .scale{
+          height: 0.5rem;
+          width: 90%;
+        }
+        .scale-html{
+          background: linear-gradient(90deg, #eeb71e 0 80%, #6d6d6d 80% 100%) ;
+        }
+        .scale-css{
+          background: linear-gradient(90deg, #eeb71e 0 70%, #6d6d6d 70% 100%) ;
+        }
+        .scale-js{
+          background: linear-gradient(90deg, #eeb71e 0 35%, #6d6d6d 35% 100%) ;
+        }
+        .scale-node{
+          background: linear-gradient(90deg, #eeb71e 0 5%, #6d6d6d 5% 100%) ;
+        }
+        .scale-git{
+          background: linear-gradient(90deg, #eeb71e 0 40%, #6d6d6d 40% 100%) ;
+        }
+        .scale-sass{
+          background: linear-gradient(90deg, #eeb71e 0 70%, #6d6d6d 70% 100%) ;
+        }
+        .scale-webpack{
+          background: linear-gradient(90deg, #eeb71e 0 30%, #6d6d6d 30% 100%) ;
+        }
+        .scale-premier{
+          background: linear-gradient(90deg, #eeb71e 0 50%, #6d6d6d 50% 100%) ;
+        }
+        .scale-photoshop{
+          background: linear-gradient(90deg, #eeb71e 0 40%, #6d6d6d 40% 100%) ;
+        }
+        .scale-autocad{
+          background: linear-gradient(90deg, #eeb71e 0 50%, #6d6d6d 50% 100%) ;
+        }
+      }
+    }
+  }
+  .language{
+    display: flex;
+    flex-direction: row;
+    .h3{
+      width: 20vw;
+    }
+    .main-text{
+      width: 70vw;
+      list-style-type: none;
+      padding: 0;
+    }
+  }
+}
+
+.footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  .footer-link{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 1rem;
+
+    .footer-item{
+      .footer-item-link{
+        height: 3rem;
+        width: 30px;
+    
+      }
+    
+      .footer-item-link--fb{
+        display: block;
+        height: 3rem;
+        width: 3rem;
+        background-image: url(../image/fb.svg);
+        background-size: cover;
+
+      }
+      .footer-item-link--ig{
+        display: block;
+        height: 3rem;
+        width: 3rem;
+        background-image: url(../image/ig.svg);
+        background-size: cover;
+
+      }
+      .footer-item-link--rsschool{
+        display: block;
+        height: 3rem;
+        width: 6rem;
+        background-image: url(../image/rsschool.svg);
+        background-size: cover;
+        border-radius: 10px;
+
+      }
+      .footer-item-link--github{
+        display: block;
+        height: 3rem;
+        width: 3rem;
+        background-image: url(../image/github.svg);
+        background-size: cover;
+        //background-color: #eeb71e; 
+        //mask-image: url(../image/github-svgrepo-com.svg);
+      }
+    }
+  }
+  .footer-h4{
+    margin: 0 0 1rem 0;
+  }
+
 }
