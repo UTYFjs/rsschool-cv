@@ -1,1 +1,1 @@
-# rsschool-cv
+https://utyfjs.github.io/rsschool-cv/
