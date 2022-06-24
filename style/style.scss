@@ -3,6 +3,7 @@
   box-sizing: border-box;
 }
 body{
+  font-size: 1rem;
   margin: 0 auto;
   padding: 0 15vw;
   width: 100%;
@@ -37,6 +38,15 @@ body{
         font-size: 1.2rem;
         margin: 0;
       }
+      .h2::after {
+
+        display: block;
+        content: " ";
+        height: 2px;
+        width: 40vw;
+        position: relative;
+        background-color: #6d6d6d;
+      }
       .contacts{
         display: flex;
         flex-direction: row;
@@ -48,19 +58,14 @@ body{
           padding: 0 10px 0 0;
         }
       }
-      .contacts::before {
-        content: " ";
-        height: 2px;
-        width: 40vw;
-        position: absolute;
-        background-color: #6d6d6d;
-      }
+
     }
     
 }
 .h3{
   width: 25%;
   font-size: 1.2em;
+  margin: 10px 0 0 0;
 }
 
 .main{
@@ -74,7 +79,7 @@ body{
     .title{
       width: 20vw;
       .h3{
-        margin: 0;
+
         white-space: nowrap;
         color: #eeb71e;
       }
@@ -95,18 +100,23 @@ body{
     background-color: #292929;
     .h3{
       width: 20vw;
+      white-space: nowrap;
+      color: #eeb71e;
     }
     .main-text{
       width: 70vw;
-      color: #eeb71e;
+
     }
   }
   .code{
     display: flex;
     flex-direction: row;
     .h3{
+      margin: 10px 0 0 0;
       width: 20vw;
       color: #eeb71e;
+      white-space: nowrap;
+
     }
     .code-text{
       width: 70vw;
@@ -186,6 +196,8 @@ body{
     background-color: #292929;
     .h3{
       width: 20vw;
+      white-space: nowrap;
+      color: #eeb71e;
     }
     .main-skills{
       list-style-type: none;
@@ -244,12 +256,13 @@ body{
     background-color: #202026;
     .h3{
       width: 20vw;
+      color: #eeb71e;
     }
     .main-text{
       width: 70vw;
       list-style-type: none;
       padding: 0;
-      color: #eeb71e;
+
     }
   }
 }
@@ -257,8 +270,9 @@ body{
   display:flex;
   flex-direction: row;
   .h3{
-    width: 15vw;
+    width: 20vw;
     color: #eeb71e;
+    white-space: nowrap;
 
   }
   .video{
@@ -278,6 +292,7 @@ body{
     flex-direction: row;
     list-style-type: none;
     gap: 1rem;
+    padding: 0;
 
     .footer-item{
       .footer-item-link{
@@ -329,3 +344,146 @@ body{
 }
 
 
+@media screen and ( max-width: 768px)
+{
+  html{
+    font-size: 13px;
+  }
+  body{
+    padding: 0 2vw;
+  }
+  .header{
+    flex-direction: column;
+    gap: 0;
+    align-items: center;
+    justify-content: center;
+
+    .foto{
+
+      align-self: center;
+      padding: 30px 0;
+    }
+    .header-title{
+      text-align: center;
+      padding: 0 0;
+      width: 90%;
+      .h1{
+        margin: 10px 0 0 0;
+      }      
+      .h2::after {
+        margin: 0 auto;
+        width: 45vw;
+      }
+      .contacts{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        padding: 0 0;
+      }
+    }
+  }
+
+  .main{
+
+    .about, .education, .code, .experience, .skills, .language, .introduction{
+      flex-direction: column;
+      align-items: center;
+
+    }
+    .about .main-text{
+      text-align: justify;
+      width: 85vw;
+    }
+    .education .main-text  {
+      width: 85vw;
+
+    }
+    .code{
+      gap: 0;
+      .pre{
+        margin: 0 0;
+        padding: 0 0;
+        .code-text{
+          width: 85vw;
+          margin: 0;
+          padding: 0;
+  
+        }
+      }
+
+    }
+    .experience .main-text  {
+      width: 85vw;
+      .text {
+        margin: 0;
+      }
+    }
+    .experience .main-text .list-project{
+      align-self: center;
+      gap: 2rem;
+    }
+    .experience .main-text .list-project .project{
+      width: 80%;
+
+      .project-link-shelter{
+        width: 35vw;
+        img{
+          width:35vw;
+        }
+      }
+      .project-link-keyboard{
+        width: 35vw;
+        img{
+          width:35vw;
+        }
+      }
+    }
+    .introduction .video{
+      width: 70vw;
+    }
+  }
+}
+@media screen and (max-width: 1280px) and (min-width: 768px){
+  html{
+    font-size: 14px;
+  }
+  body{
+    padding: 0 3vw;
+  }
+  .header{
+    .foto{
+      padding: 40px 0;
+    }
+    .header-title{
+      padding: 10px 0;
+      .contacts{
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  }
+  .main{
+    .experience .main-text  {
+      width: 85vw;
+      .text {
+        margin: 0;
+        padding-left: 5px;
+      }
+    }
+    .experience .main-text .list-project .project{
+      .project-link-shelter{
+        width: 30vw;
+        img{
+          width:30vw;
+        }
+      }
+      .project-link-keyboard{
+        width: 30vw;
+        img{
+          width:30vw;
+        }
+      }
+    }
+  }
+}
